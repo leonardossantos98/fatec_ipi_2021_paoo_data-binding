@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-binding';
+
+  nome: string;
+  esconderCaixa = true;
+
+
+  alterarNome(nome: string){
+    if(!nome){
+      this.esconderCaixa = true;
+   }
+ }
+
+  //nome = "José";
+  //idade = 20;
+
+  //lancarDado(){
+  //  return Math.floor(Math.random()*6)+1;
+  //}
+
+  adicionar(nome: string){
+    this.esconderCaixa = !nome;
+    this.nome = nome;
+  }
 }

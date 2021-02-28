@@ -19,7 +19,6 @@ describe('AppComponent', () => {
   it(`should have as title 'data-binding'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('data-binding');
   });
 
   it('should render title', () => {
